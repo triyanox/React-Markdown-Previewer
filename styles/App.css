@@ -1,0 +1,149 @@
+.wrapper{
+    position: absolute;
+    margin: 0px;
+    background-color:#FFFFFF;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+  }
+  
+  .container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+  }
+  .title{
+    color:#8A897C;
+    font-size:0.8rem;
+    text-align:center;
+    margin-top:0.2rem;
+    padding:0.5rem;
+    
+  }
+  .input{
+    position: relative;
+    font-size:1rem;
+    width:24rem;
+    height:25rem;
+    display:flex; 
+    border:none;
+    outline: none;
+    justify-content:center;
+    align-items: center;
+    background-color:#353535;
+    color:#D2D7DF;
+   
+    padding:2rem;
+    margin:1rem;
+    border-radius:1rem;
+    box-shadow: rgba(1, 12, 46, 0.1) 0px 48px 100px 0px;
+    resize: none;
+  }
+  
+  .marked{
+    position: relative;
+    font-size:0.8rem;
+    background-color:#BDBBB0;
+    width:24rem;
+    height:25rem;
+    padding:2rem;
+    border-radius:1rem;
+    overflow:scroll;
+    box-shadow: rgba(17, 12, 4, 0.2) 0px 48px 100px 0px;
+    
+  }
+  
+  code{
+    background-color:#353535;
+    color:#D2D7DF;
+  } 
+  
+  
+  .box {
+      position: absolute;
+      top: 0;
+      transform: rotate(80deg);
+      left: 0;
+  }
+  
+  .wave {
+      position: fixed;
+      top: 0;
+      left: 0;
+    opacity: .4;
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    background: #8A897C;
+    width: 100vh;
+    height: 90vh;
+    margin-left: -150px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 7000ms infinite linear;
+  }
+  
+  
+  .box:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  @keyframes drift {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+  }
+  
+
+  .footer{
+    width:100%;
+    height: 8vh;
+    bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .icons{
+    width:24px;
+    height: 24px;
+  }
+  
+  @media (max-width : 1000px){
+    .input{
+        font-size:0.8rem;
+        width: 70vw;
+        height: 25vh;
+    }
+    .marked{
+        font-size:0.8rem;
+        width: 70vw;
+        height: 25vh;
+    }
+    .container{  
+        flex-wrap: wrap;
+        flex-direction:column;
+        margin: 0px 0.2rem;
+      }
+  }
+
+  
