@@ -1,6 +1,6 @@
  # React Markdown Previewer
 
-This is a react markdown previewer for [FreeCodeCamp](https://www.freecodecamp.org/) challenge made using Next Js which is a React framwork by Vercel.
+This is a react markdown previewer using Next Js which is a React framwork by Vercel.
 
 ## Getting Started
 
